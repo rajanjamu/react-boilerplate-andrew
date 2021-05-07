@@ -1,0 +1,60 @@
+{
+  "name": "boilerplate-react-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "webpack --watch",
+    "build:dev": "webpack --config webpack.dev.js",
+    "build:prod": "webpack --config webpack.prod.js",
+    "dev-server": "webpack serve --open --config webpack.dev.js",
+    "start": "node server/server.js",
+    "test": "jest",
+    "heroku-postbuild": "npm run build:prod"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^5.2.4",
+    "dotenv": "^9.0.0",
+    "express": "^4.17.1",
+    "firebase": "^8.4.3",
+    "history": "^4.10.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "moment": "^2.29.1",
+    "node-sass": "^5.0.0",
+    "normalize.css": "^8.0.1",
+    "numeral": "^2.0.6",
+    "react": "^17.0.2",
+    "react-dates": "^21.8.0",
+    "react-dom": "^17.0.2",
+    "react-modal": "^3.13.1",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "uuid": "^8.3.2",
+    "validator": "^13.6.0",
+    "webpack": "^5.36.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-merge": "^5.7.3"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "7.x"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
